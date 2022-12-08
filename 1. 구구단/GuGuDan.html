@@ -21,13 +21,13 @@
     const onSubmitForm = (e) => {
       e.preventDefault();
       if (parseInt(value) === first * second) {
-        setResult('정답');
+        setResult('결과 : ' + value + ' 정답');
         setFirst(Math.ceil(Math.random() * 9));
         setSecond(Math.ceil(Math.random() * 9));
         setValue('');
         inputEl.current.focus();
       } else {
-        setResult('땡');
+        setResult('결과 : ' + value + ' 땡');
         setValue('');
         inputEl.current.focus();
       }
